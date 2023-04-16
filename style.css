@@ -2,37 +2,136 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+    background: url(../web/images/background_2.jpg) no-repeat fixed;
+    background-size: cover;
 }
 
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+  
+  h1 {
+    text-align: center;
+    padding: 50px 0;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -1px;
+    color: white;
+    font-size: 70px;
+  }
+    
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    font-weight: 400;
+    color: inherit;
+    padding: 50px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+header{
+    size: 20px;
+    padding-bottom: 100px;
+    /* background: #333; */
 
-nav ul {
-	list-style-type: none;
-	display: flex;
-	margin: 0;
-	padding: 0;
 }
-
-nav ul li {
-	margin: 0 10px;
+header .logo{
+    align-items: center;
 }
+  /* NAVIGATION */
+  nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: px 0;
+    background: transparent;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 50px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #4b4a4a;
+  }
+  
+/* Circle */
+nav.circle ul li a {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  /* By Dominik Biedebach @domobch */
+  nav.circle ul li a:after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  nav.circle ul li a:hover:after {
+    -webkit-animation: circle 1.5s ease-in forwards;
+  }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: auto;
 
-nav ul li a {
-	color: #fff;
-	text-decoration: none;
 }
 
 main {
-	padding: 20px;
+    background: #fff;
 }
 
+.about-text {
+    font-size: 28px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 85px;
+    padding-top: 20px;
+}
+
+a[href="#about"] {
+    transform: translateZ(0);
+    transition: all 0.3s ease;
+    will-change: transform;
+}
+
+  
+  a:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+  }
 section {
 	margin-bottom: 50px;
 }
@@ -49,12 +148,32 @@ section ul {
 	flex-wrap: wrap;
 }
 
+#contact-us {
+  background-color: #ffffff;
+  padding: 20px;
+  border-top:35px #4b4a4a solid ;
+}
+
+#products{
+  border-top:35px #4b4a4a solid ;
+
+}
+p.contact {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+
 section ul li {
 	flex-basis: 30%;
 	margin: 10px;
 	padding: 10px;
 	background-color: #f0f0f0;
-	border-radius: 5px
+	border-radius: 10px
 }
 
     section ul li img {
@@ -74,7 +193,7 @@ section ul li {
     }
     
     footer {
-    background-color: #333;
+    background-color: #747171;
     color: #fff;
     padding: 10px;
     text-align: center;
