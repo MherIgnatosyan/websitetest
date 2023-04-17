@@ -2,8 +2,8 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-    background: url(../web/images/background_2.jpg) no-repeat fixed;
-    background-size: cover;
+  background: url(images/background_2.jpg) no-repeat fixed;
+  background-size: cover;
 }
 
   
@@ -36,8 +36,16 @@ header{
     /* background: #333; */
 
 }
+.headere ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
 header .logo{
     align-items: center;
+}
+.flag{
+  height: 31px;
+  width: 51px;
 }
   /* NAVIGATION */
   nav {
@@ -149,7 +157,8 @@ section ul {
 }
 
 #contact-us {
-  background-color: #ffffff;
+  /* background: url(images/background_3.jpg) no-repeat fixed; */
+  background-size: cover;
   padding: 20px;
   border-top:35px #4b4a4a solid ;
 }
@@ -167,7 +176,40 @@ p.contact {
   padding-bottom: 10px;
 }
 
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 
+.contact-details p {
+  margin: 20px 0;
+}
+
+.contact-details i {
+  margin-right: 10px;
+  color: #4c4c4c;
+}
+.map-container {
+  margin: 0 auto;
+  max-width: 500px; /* adjust this value to your liking */
+  padding: 40px; /* add some padding to create space around the map */
+}
+
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
 section ul li {
 	flex-basis: 30%;
 	margin: 10px;
