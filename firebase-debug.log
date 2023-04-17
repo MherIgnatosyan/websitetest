@@ -19,3 +19,35 @@ You're about to initialize a Firebase project in this directory:
 
   C:\Users\ignat\Documents\GitHub\websitetest
 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-17T18:43:17.470Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-04-17T18:43:18.107Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-04-17T18:43:18.108Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project website-bbeda (website) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-04-17T18:43:19.226Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-04-17T18:43:19.226Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/website-bbeda
+[debug] [2023-04-17T18:43:20.480Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com 200
+[debug] [2023-04-17T18:43:20.481Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-04-17T18:43:20.484Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-04-17T18:43:20.484Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/website-bbeda
+[debug] [2023-04-17T18:43:22.093Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-04-17T18:43:22.094Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-04-17T18:43:32.103Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-04-17T18:43:32.103Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/website-bbeda
+[debug] [2023-04-17T18:43:33.267Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com 200
+[debug] [2023-04-17T18:43:33.267Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/website-bbeda/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-04-17T18:43:33.272Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/website-bbeda [none]
+[debug] [2023-04-17T18:43:33.665Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/website-bbeda 200
+[debug] [2023-04-17T18:43:33.665Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/website-bbeda {"projectId":"website-bbeda","projectNumber":"249227296753","displayName":"website","name":"projects/website-bbeda","resources":{"hostingSite":"website-bbeda"},"state":"ACTIVE","etag":"1_64dd8e02-a799-4886-8200-f09c9017c445"}
