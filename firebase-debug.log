@@ -1,0 +1,21 @@
+[debug] [2023-04-17T18:43:03.031Z] ----------------------------------------------------------------------
+[debug] [2023-04-17T18:43:03.033Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ignat\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-17T18:43:03.033Z] CLI Version:   11.27.0
+[debug] [2023-04-17T18:43:03.034Z] Platform:      win32
+[debug] [2023-04-17T18:43:03.034Z] Node Version:  v18.14.0
+[debug] [2023-04-17T18:43:03.035Z] Time:          Mon Apr 17 2023 19:43:03 GMT+0100 (British Summer Time)
+[debug] [2023-04-17T18:43:03.035Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-17T18:43:03.043Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-17T18:43:03.044Z] > authorizing via signed-in user (ignatosyanmher@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ignat\Documents\GitHub\websitetest
+
